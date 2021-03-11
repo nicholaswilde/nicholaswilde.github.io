@@ -1,0 +1,21 @@
+---
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+buttons:
+  - name: All
+    filter: "all"
+  - name: Hobby
+    filter: "hobby"
+
+projects:
+  - name: Helm Charts
+    role: Owner
+    repo: https://github.com/nicholaswilde/helm-charts
+    timeline: "March 2020 - Present"
+    summary: "My collection of helm charts"
+    tags: ["hobby", "kubernetes", "cloud", "helm", "charts"]
