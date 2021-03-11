@@ -19,3 +19,9 @@ projects:
     timeline: "March 2020 - Present"
     summary: "My collection of helm charts"
     tags: ["hobby", "kubernetes", "cloud", "helm", "charts"]
+  - name: Workbench
+    role: Owner
+    url: https://photos.app.goo.gl/6Tk9DJvwFAKSfW8t7
+    timeline: "2019"
+    summary: "An english style woodworking workbench"
+    tags: ["hobby", "woodworking", "workbench"]
