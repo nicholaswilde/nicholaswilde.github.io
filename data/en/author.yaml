@@ -4,8 +4,28 @@ nickname: Nick
 image: images/avatar.jpg
 contactInfo:
   email: ncwilde43@gmail.com
-greeting: Hi, I'm
+greeting: Hello, I'm
 summary:
   - "I'm a Mechanical Engineer"
-  - "I'm interested in Go and Docker"
+  - "I'm interested in Kubernetes and Docker"
   - "I love to work on OSS projects"
+designation: Directory, Automation Design
+company:
+  name: Applied Medical
+  url: "https://appliedmedical.com/"
+socialLinks:
+  - name: Github
+    icon: "fab fa-github"
+    url: "https://www.github.com/nicholaswilde"
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "ncwilde43@gmail.com"
+  - name: LinkedIn
+    icon: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/nicholaswilde/"
+  - name: Twitter
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/nicholascwilde"
+  - name: Facebook
+    icon: "fab fa-facebook"
+    url: "https://www.facebook.com/nicholas.wilde"
