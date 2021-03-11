@@ -1,0 +1,11 @@
+---
+name: Nicholas Wilde
+nickname: Nick
+image: images/avatar.jpg
+contactInfo:
+  email: ncwilde43@gmail.com
+greeting: Hi, I'm
+summary:
+  - "I'm a Mechanical Engineer"
+  - "I'm interested in Go and Docker"
+  - "I love to work on OSS projects"

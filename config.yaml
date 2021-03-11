@@ -1,0 +1,16 @@
+baseURL: https://nicholaswilde.github.io/
+languageCode: en-us
+title: Nicholas Wilde
+theme: "toha"
+enableRobotsTXT: true
+enableEmoji: true
+
+params:
+  gitRepo: https://github.com/nicholaswilde/nicholaswilde.github.io
+  background: images/background.jpg
+  logo:
+    favicon: images/favicon.jpg
+  enableTOC: true
+  enableBlogPost: false
+  newsletter:
+    enable: false
