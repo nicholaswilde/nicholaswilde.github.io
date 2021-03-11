@@ -6,6 +6,11 @@ theme: "toha"
 enableRobotsTXT: true
 enableEmoji: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
   gitRepo: https://github.com/nicholaswilde/nicholaswilde.github.io
   background: images/background.jpg
