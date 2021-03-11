@@ -25,3 +25,9 @@ projects:
     timeline: "2019"
     summary: "An english style woodworking workbench"
     tags: ["hobby", "woodworking", "workbench"]
+  - name: Shaker End Table
+    role: Owner
+    url: https://photos.app.goo.gl/LJHS58xKZ7is7tcV8
+    timeline: "2020"
+    summary: "A cherry shaker end table"
+    tags: ["hobby", "woodworking", "workbench"]
