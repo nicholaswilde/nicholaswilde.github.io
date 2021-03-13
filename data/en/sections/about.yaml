@@ -40,3 +40,7 @@ socialLinks:
   - name: Instagram
     icon: "fab fa-instagram"
     url: "https://www.instagram.com/wildewoodworking/"
+
+  - name: LinkedIn
+    icon: "fab fa-linkedin-in"
+    url: "http://www.linkedin.com/in/nicholaswilde"
