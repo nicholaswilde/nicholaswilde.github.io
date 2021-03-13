@@ -3,6 +3,7 @@ baseURL: https://nicholaswilde.github.io/
 languageCode: en-us
 title: Nicholas Wilde
 theme: "toha"
+googleAnalytics: "G-Z2DZJYE1MB"
 enableRobotsTXT: true
 enableEmoji: true
 
