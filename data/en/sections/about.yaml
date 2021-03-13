@@ -16,19 +16,23 @@ summary: |
   An automation engineer who is fascinated with how things work in all aspects
   of life; whether it is technological, spiritual, social, political, or
   economical. Current interests include traditional woodworking, cluster
-  computing using Kubernetes, and containerization using Docker. 
+  computing using Kubernetes, and containerization using Docker.
   <a target="_blank" href="https://www.youtube.com/watch?v=sQtfPHXm0DA">Check out</a>
   the machines that my team has designed.
 
 socialLinks:
-- name: GitHub
-  icon: "fab fa-github"
-  url: "https://github.com/nicholaswilde"
+  - name: GitHub
+    icon: "fab fa-github"
+    url: "https://github.com/nicholaswilde"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "https://twitter.com/nicholascwilde"
+  - name: Twitter
+    icon: "fab fa-twitter"
+    url: "https://twitter.com/nicholascwilde"
 
-- name: Email
-  icon: "fas fa-envelope"
-  url: "ncwilde43@gmail.com"
+  - name: Email
+    icon: "fas fa-envelope"
+    url: "ncwilde43@gmail.com"
+
+  - name: Resume
+    icon: "fas fa-file-pdf"
+    url: "https://github.com/nicholaswilde/curriculum-vitae/releases/latest/download/resume.pdf"
