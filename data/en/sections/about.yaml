@@ -36,3 +36,7 @@ socialLinks:
   - name: Resume
     icon: "fas fa-file-pdf"
     url: "https://github.com/nicholaswilde/curriculum-vitae/releases/latest/download/resume.pdf"
+
+  - name: Instagram
+    icon: "fab fa-instagram"
+    url: "https://www.instagram.com/wildewoodworking/"
