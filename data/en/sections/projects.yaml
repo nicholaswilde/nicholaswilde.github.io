@@ -37,7 +37,7 @@ projects:
   - name: "k8s@home Docs"
     logo: /images/k8s-at-home.png
     role: Contributor
-    url: https://github.com/k8s-at-home/docs
+    repo: https://github.com/k8s-at-home/docs
     timeline: "2021"
     summary: "Docs for k8s@home"
     tags: ["hobby", "kubernetes", "cloud", "helm", "charts", "docs"]
