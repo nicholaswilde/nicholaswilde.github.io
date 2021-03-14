@@ -35,7 +35,7 @@ projects:
     summary: "A cherry shaker end table"
     tags: ["hobby", "woodworking", "workbench"]
   - name: "k8s@home Docs"
-    logo: "https://raw.githubusercontent.com/k8s-at-home/organization/main/logo/k8s-at-home-32.png"
+    logo: /images/k8s-at-home.png
     role: Contributor
     url: https://github.com/k8s-at-home/docs
     timeline: "2021"
