@@ -41,3 +41,9 @@ projects:
     timeline: "2021"
     summary: "Docs for k8s@home"
     tags: ["hobby", "kubernetes", "cloud", "helm", "charts", "docs"]
+  - name: "Notes"
+    role: Owner
+    repo: https://nicholaswilde.github.io/notes/
+    timeline: "2020"
+    summary: "My notes on random things"
+    tags: ["hobby", "notes", "code"]
