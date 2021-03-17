@@ -11,6 +11,10 @@ buttons:
     filter: "all"
   - name: Hobby
     filter: "hobby"
+  - name: Woodworking
+    filters: "woodworking"
+  - name: Code
+    filters: "code"
 
 projects:
   - name: Helm Charts
@@ -19,31 +23,31 @@ projects:
     repo: https://github.com/nicholaswilde/helm-charts
     timeline: "March 2020 - Present"
     summary: "My collection of helm charts"
-    tags: ["hobby", "kubernetes", "cloud", "helm", "charts"]
+    tags: ["hobby", "code"]
   - name: Workbench
     logo: /images/plane.jpg
     role: Owner
     url: https://photos.app.goo.gl/6Tk9DJvwFAKSfW8t7
     timeline: "2019"
     summary: "An english style woodworking workbench"
-    tags: ["hobby", "woodworking", "workbench"]
+    tags: ["hobby", "woodworking"]
   - name: Shaker End Table
     logo: /images/plane.jpg
     role: Owner
     url: https://photos.app.goo.gl/LJHS58xKZ7is7tcV8
     timeline: "2020"
     summary: "A cherry shaker end table"
-    tags: ["hobby", "woodworking", "workbench"]
+    tags: ["hobby", "woodworking"]
   - name: "k8s@home Docs"
     logo: /images/k8s-at-home.png
     role: Contributor
     repo: https://github.com/k8s-at-home/docs
     timeline: "2021"
     summary: "Docs for k8s@home"
-    tags: ["hobby", "kubernetes", "cloud", "helm", "charts", "docs"]
+    tags: ["hobby", "code"]
   - name: "Notes"
     role: Owner
     repo: https://nicholaswilde.github.io/notes/
     timeline: "2020"
     summary: "My notes on random things"
-    tags: ["hobby", "notes", "code"]
+    tags: ["hobby", "code"]
