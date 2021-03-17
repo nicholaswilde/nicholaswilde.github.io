@@ -20,6 +20,8 @@ summary: |
   <a target="_blank" href="https://www.youtube.com/watch?v=sQtfPHXm0DA">Check out</a>
   the machines that my team has designed.
 
+resume: "https://github.com/nicholaswilde/curriculum-vitae/releases/latest/download/resume.pdf"
+
 socialLinks:
   - name: GitHub
     icon: "fab fa-github"
@@ -32,10 +34,6 @@ socialLinks:
   - name: Email
     icon: "fas fa-envelope"
     url: "ncwilde43@gmail.com"
-
-  - name: Resume
-    icon: "fas fa-file-pdf"
-    url: "https://github.com/nicholaswilde/curriculum-vitae/releases/latest/download/resume.pdf"
 
   - name: Instagram
     icon: "fab fa-instagram"
