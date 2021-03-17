@@ -45,9 +45,9 @@ projects:
     timeline: "2021"
     summary: "Docs for k8s@home"
     tags: ["hobby", "code"]
-  - name: "Notes"
+  - name: "dotfiles"
     role: Owner
-    repo: https://nicholaswilde.github.io/notes/
-    timeline: "2020"
-    summary: "My notes on random things"
+    repo: https://github.com/nicholaswilde/dotfiles
+    timeline: "2021"
+    summary: "My Debian based dot files."
     tags: ["hobby", "code"]
