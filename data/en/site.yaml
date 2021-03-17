@@ -2,3 +2,5 @@
 copyright: © 2021 Copyright.
 description: Portfolio of Nicholas Wilde.
 customMenus:
+- name: Notes
+  url: https://nicholaswilde.github.io/notes/
