@@ -12,9 +12,9 @@ buttons:
   - name: Hobby
     filter: "hobby"
   - name: Woodworking
-    filters: "woodworking"
+    filter: "woodworking"
   - name: Code
-    filters: "code"
+    filter: "code"
 
 projects:
   - name: Helm Charts
