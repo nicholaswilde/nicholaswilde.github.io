@@ -51,3 +51,24 @@ projects:
     timeline: "2021"
     summary: "My Debian based dot files."
     tags: ["hobby", "code"]
+  - name: "Turing Pi Scripts"
+    logo: /images/turingpi.jpg
+    role: Owner
+    repo: https://github.com/nicholaswilde/turing-pi-scripts
+    timeline: "2020"
+    summary: "Miscellaneous scripts for my Turing Pi setup."
+    tags: ["hobby", "code"]
+  - name: "Turing Pi Cluster"
+    logo: /images/turingpi.jpg
+    role: Owner
+    repo: https://github.com/nicholaswilde/turing-pi-cluster
+    timeline: "2020"
+    summary: "Turing Pi cluster configuration for Raspberry Pi Compute Modules."
+    tags: ["hobby", "code"]
+  - name: "Herb Planter Box"
+    logo: /images/plane.jpg
+    role: Owner
+    url: https://www.instagram.com/p/B-25_RoDUum/
+    timeline: "2020"
+    summary: "Quarter inch oak her planter box."
+    tags: ["hobby", "woodworking"]
