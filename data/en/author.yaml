@@ -29,3 +29,6 @@ socialLinks:
   - name: Facebook
     icon: "fab fa-facebook"
     url: "https://www.facebook.com/nicholas.wilde"
+  - name: Paypal
+    icon: "fab fa-paypal"
+    url: "https://www.paypal.com/paypalme/nicholaswilde"
