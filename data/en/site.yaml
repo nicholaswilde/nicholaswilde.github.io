@@ -2,5 +2,7 @@
 copyright: © 2021 Copyright.
 description: Portfolio of Nicholas Wilde.
 customMenus:
-- name: Notes
-  url: https://nicholaswilde.github.io/notes/
+  - name: Notes
+    url: https://nicholaswilde.github.io/notes/
+  - name: Home Cluster
+    url: https://nicholaswilde.github.io/home-cluster/

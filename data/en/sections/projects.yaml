@@ -72,8 +72,9 @@ projects:
     timeline: "2020"
     summary: "Quarter inch oak her planter box."
     tags: ["hobby", "woodworking"]
-  - name: "home-cluster"
+  - name: "Home Cluster"
     role: Owner
+    logo: /images/k8s-at-home.png
     repo: https://github.com/nicholaswilde/home-cluster
     timeline: "2021"
     summary: "About My home Kubernetes (k3s) cluster managed by GitOps (Flux2)"
