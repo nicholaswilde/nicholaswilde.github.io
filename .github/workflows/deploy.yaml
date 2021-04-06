@@ -33,5 +33,6 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: nicholaswilde.io
         publish_branch: main # if your main branch is `master` use that here.
         publish_dir: ./public
