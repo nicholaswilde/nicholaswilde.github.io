@@ -1,3 +1,3 @@
 # nicholaswilde.github.io
 
-https://nicholaswilde.github.io/
+https://nicholaswilde.io/
