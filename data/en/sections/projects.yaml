@@ -75,7 +75,7 @@ projects:
   - name: "Home Cluster"
     role: Owner
     logo: /images/k8s-at-home.png
-    repo: https://github.com/nicholaswilde/home-cluster
+    repo: https://nicholaswilde.io/home-cluster
     timeline: "2021"
     summary: "About My home Kubernetes (k3s) cluster managed by GitOps (Flux2)"
     tags: ["hobby", "code"]
