@@ -43,6 +43,10 @@ socialLinks:
     icon: "fab fa-linkedin-in"
     url: "http://www.linkedin.com/in/nicholaswilde"
 
+  - name: Facebook
+    icon: "fab fa-facebook"
+    url: "https://www.facebook.com/nicholas.wilde/"
+
   - name: GPG
     icon: "fas fa-key"
     url: "https://github.com/nicholaswilde.gpg"
