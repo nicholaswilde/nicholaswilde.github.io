@@ -17,11 +17,18 @@ buttons:
     filter: "code"
 
 projects:
+  - name: Solar Battery Charger
+    logo: /images/charger.jpg
+    role: Owner
+    repo: https://github.com/nicholaswilde/solar-battery-charger
+    timeline: "January 2022 - Present"
+    summary: "A solar battery charger to charge lithium ion (li-ion) 18650, 9V, and coin batteries and Ni-MH AA and AAA batteries."
+    tags: ["hobby", "code"]
   - name: Helm Charts
     logo: /images/helm.png
     role: Owner
     repo: https://github.com/nicholaswilde/helm-charts
-    timeline: "March 2020 - Present"
+    timeline: "March 2020 - 2021"
     summary: "My collection of helm charts"
     tags: ["hobby", "code"]
   - name: Workbench
