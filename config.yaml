@@ -7,6 +7,9 @@ googleAnalytics: "G-Z2DZJYE1MB"
 enableRobotsTXT: true
 enableEmoji: true
 
+staticDir:
+  - static
+
 markup:
   goldmark:
     renderer:
