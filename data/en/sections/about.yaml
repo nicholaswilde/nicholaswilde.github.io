@@ -47,6 +47,10 @@ socialLinks:
     icon: "fab fa-facebook"
     url: "https://www.facebook.com/nicholas.wilde/"
 
+  - name: Keybase
+    icon: "fab fa-keybase"
+    url: "https://keybase.io/nicholaswilde"
+
   - name: GPG
     icon: "fas fa-key"
     url: "https://github.com/nicholaswilde.gpg"
