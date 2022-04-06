@@ -1,0 +1,16 @@
+---
+version: '3'
+
+tasks:
+  install:
+    desc: Install hugo
+    cmds:
+      - brew install hugo
+  serve:
+    desc: Start the hugo server
+    cmds:
+      - hugo server --theme toha --watch
+  default:
+    cmds:
+      - task -l
+    silent: true
