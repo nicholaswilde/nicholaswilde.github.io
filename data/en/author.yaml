@@ -32,3 +32,6 @@ socialLinks:
   - name: Paypal
     icon: "fab fa-paypal"
     url: "https://www.paypal.com/paypalme/nicholaswilde"
+  - name: Keybase
+    icon: "fab fa-keybase"
+    url: "https://keybase.io/nicholaswilde"
