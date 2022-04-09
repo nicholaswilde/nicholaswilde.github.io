@@ -17,6 +17,12 @@ buttons:
     filter: "code"
 
 projects:
+  - name: Recipes
+    role: Owner
+    repo: https://nicholaswilde.io/recipes
+    timeline: "April 2022 - Present"
+    summary: "My collection of recipes made with cooklang."
+    tags: ["hobby", "code"]
   - name: Solar Battery Charger
     logo: /images/charger.jpg
     role: Owner
