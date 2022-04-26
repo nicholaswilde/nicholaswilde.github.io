@@ -9,7 +9,7 @@ tasks:
   serve:
     desc: Start the hugo server
     cmds:
-      - hugo server --theme toha --watch
+      - hugo server --theme toha --watch --bind=0.0.0.0
   default:
     cmds:
       - task -l
