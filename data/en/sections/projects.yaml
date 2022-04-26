@@ -20,11 +20,12 @@ projects:
   - name: cook-docs
     logo: /images/cooklang.png
     role: Owner
-    repo: https://nicholaswilde.io/cookdocs
+    repo: https://nicholaswilde.io/cook-docs
     timeline: "April 2022 - Present"
     summary: "A tool for automatically generating markdown documentation for cooklang recipes"
     tags: ["hobby", "code"]
   - name: Recipes
+    logo: /images/cooklang.png
     role: Owner
     repo: https://nicholaswilde.io/recipes
     timeline: "April 2022 - Present"
