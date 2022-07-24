@@ -66,9 +66,9 @@ projects:
     timeline: "2021"
     summary: "Docs for k8s@home"
     tags: ["hobby", "code"]
-  - name: "dotfiles"
+  - name: "dotfiles2"
     role: Owner
-    repo: https://github.com/nicholaswilde/dotfiles
+    repo: https://nicholaswilde.io/dotfiles2
     timeline: "2021"
     summary: "My Debian based dot files."
     tags: ["hobby", "code"]
