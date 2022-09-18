@@ -17,6 +17,12 @@ buttons:
     filter: "code"
 
 projects:
+  - name: libbash
+    role: Owner
+    repo: https://nicholaswilde.io/libbash
+    timeline: "September 2022 - Present"
+    summary: "A collection of common bash libraries"
+    tags: ["hobby", "code"]
   - name: cook-docs
     logo: /images/cooklang.png
     role: Owner
