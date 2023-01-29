@@ -1,6 +1,6 @@
 "use strict";
 
-var projectCards, publicationCards;
+var projectCards;
 
 (function ($) {
   jQuery(document).ready(function () {
@@ -63,6 +63,28 @@ var projectCards, publicationCards;
       }
     }
 
+    // ==================== Adjust height of the skills card =============
+    function adjustSkillCardsHeight() {
+      if (!isMobile) { // no need to adjust height for mobile devices
+        // primary skills
+        var skillCards = document.getElementById("primary-skills");
+        if (skillCards != null) {
+          var cardElems = skillCards.getElementsByClassName("card");
+          var maxHeight = 0;
+          for (let i = 0; i < cardElems.length; i++) {
+            if (cardElems.item(i).clientHeight > maxHeight) {
+              maxHeight = cardElems.item(i).clientHeight;
+            }
+          }
+          for (let i = 0; i < cardElems.length; i++) {
+            cardElems.item(i).setAttribute("style", "min-height: " + maxHeight + "px;");
+          }
+        }
+      }
+    }
+    $(window).on("load", function () {
+      adjustSkillCardsHeight();
+    });
 
     // ================== Project cards =====================
     // Add click action on project category selector buttons
@@ -79,22 +101,7 @@ var projectCards, publicationCards;
 
     var projectCardHolder = document.getElementById("project-card-holder");
     if (projectCardHolder != null && projectCardHolder.children.length != 0) {
-      projectCards = $(".filtr-projects").filterizr(
-        {
-          layout: 'sameWidth',
-          controlsSelector: '.project-filtr-control',
-        });
-    }
-
-    // ================== Publication cards =====================
-    var publicationCardHolder = document.getElementById("publication-card-holder");
-    if (publicationCardHolder != null && publicationCardHolder.children.length != 0) {
-      publicationCards = $(".filtr-publications").filterizr(
-        {
-          layout: 'sameWidth',
-          gridItemsSelector: '.pub-filtr-item',
-          controlsSelector: '.pub-filtr-control',
-        });
+      projectCards = $(".filtr-projects").filterizr({ layout: 'sameWidth' });
     }
 
     function showGithubStars() {
@@ -324,17 +331,17 @@ var projectCards, publicationCards;
           this.parentElement.classList.toggle("col-sm-12");
           if (this.children["SmallImage"].hasAttribute("active")) {
             let mainLogo = this.children["LargeImage"].getAttribute("Style");
-            this.children["LargeImage"].setAttribute("active", true);
+            this.children["LargeImage"].setAttribute("active",true);
             this.children["SmallImage"].removeAttribute("active");
 
             this.setAttribute("Style", mainLogo);
           } else {
             let mainLogo = this.children["SmallImage"].getAttribute("Style");
-            this.children["SmallImage"].setAttribute("active", true);
+            this.children["SmallImage"].setAttribute("active",true);
             this.children["LargeImage"].removeAttribute("active");
             this.setAttribute("Style", mainLogo);
           }
-
+         
           if (this.children["caption"] != undefined) {
             this.children["caption"].classList.toggle("hidden");
           }
@@ -353,6 +360,7 @@ var projectCards, publicationCards;
     // re-render custom functions on window resize
     window.onresize = function () {
       detectDevice();
+      adjustSkillCardsHeight();
       adjustRecentPostsHeight();
       showAchievements();
     };
