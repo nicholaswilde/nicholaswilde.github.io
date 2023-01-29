@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/nicholaswilde
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nicholaswilde.io
+  * I am nicholaswilde (https://keybase.io/nicholaswilde) on keybase.
+  * I have a public key with fingerprint C278 D776 0E0B 27F1 9265  9595 F08A D0AD 08B7 D7A3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a7dace14e67c5863716a65901bbb1c8ea6a60875eaf89525b8f9383ca97815f00a",
+      "fingerprint": "c278d7760e0b27f192659595f08ad0ad08b7d7a3",
+      "host": "keybase.io",
+      "key_id": "f08ad0ad08b7d7a3",
+      "kid": "0101a7dace14e67c5863716a65901bbb1c8ea6a60875eaf89525b8f9383ca97815f00a",
+      "uid": "f68f4510218b60ef248f3a28e4d92219",
+      "username": "nicholaswilde"
+    },
+    "service": {
+      "hostname": "nicholaswilde.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1649183256,
+  "expire_in": 157680000,
+  "prev": "166e49bb3bd87b00e2877aaedb7a66204c5492d4a1c08c53c6cafe58f0bf7dd1",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK5AnicrVJtbBRFGL6jiPa4GkooHyoaN6CJnmVnbndn9tImQhFjA1qjUkJNLjO7
+s+3Sdne5vR7UQonBNl65iBYLag7ai4JYooixVr0SW6yBaiG0SK981/7oD5GIn7/E
+Ogv6j5/OTDJ5Z57neZ/3zTtYkOcL+K+3nf7wrt7cu/7vBjINPrq6bWGTQG29UYg0
+CbXs5sXqdObGo7WmLkQEEYiAIJ1oDEhMQZqMlTACClFkVQSUUqBhRngoYiQzYmBV
+hjLFhhrGYY2oCAPZEEUihATDtKpZzImZVpzLahBhHSFFZCKFyAAq5IJ8GyImusgP
+pkhHJMyJNbbrMbg5SlxWbNr8jQfRm/Zug/+ffTfcyqNgQ5KBCAGm3LQBJWyECcRM
+0lUIgeoBXRazSD3jaMvUauw64m4yeSuFrSGBfyVMjXnd9cq5HexWYU7MjtuaXcd/
+a+Jxx4147Hij48E3MRr9VyhKTUvnDeWMBIu5pm0JEcCRWtz0lIEiqQCHoayEBLbZ
+MWMsanoIGSlY5MvLwxJcEigKk1RKw1THiIoigxghQphOEVEUKEqaLKlQlwjQRKzJ
+YU3RiMFkbIjUQLoOBK+0jZbNtSH3Saq5pmtWWyTeEOOFH+u/ONPnD/hm3THDmzRf
+IH/Of/M3ejToS723uXDo9YrJh2bua+t8JZ3Knkj9vnIq1Z58uTMvfyw2vae44Ez/
+/KOJH04dmld0lmU7uq/OO5/NzR2e3HDSKu3peiNVOWtwbe+T23JzkndXFoHlfR1u
+F1mbOfD3mfmhUrcoeyMyPLjlq+Y1J/uvVYWuzD2UN3TdWSrIoxPBFy498BZtzg7s
+G47s6v2y/OpuiEpHunGko/bHdG3fVDDQaLQ6TXRopKsk+X19Ye7KkicuH991/08P
+fn3i4MWSa4m+G6uWrdgK8cO/pvfeV/X5kZHksZdWrHb2rj/yzrZTxZ/M/ixz5/qB
+x6eieEFm5IPgzsdayt9+seLgntzkzxUtrz21qHC3z//xnyUTGKaedoIbF8/4pfvV
+xPFkz4L8L3YEPh0f23Eh0HZ5Q/3ggc6dy9rpb3p0zFr8TM/5LYveXLddVVvvea5s
+dus3l94vmzTPSlWHL9Qdrrp35UfTz/9RvqpyYvuSYqsvrYyeOx3561yofY25MLO0
+o/nZ5fBR//6W/eu+LTPSzePjbsH0I/8AGoiIIg==
+=9MNw
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nicholaswilde
+
+==================================================================
