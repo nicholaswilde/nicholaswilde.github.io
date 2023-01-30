@@ -1,16 +1,11 @@
 .skills-section .card .card-head {
   background-color: #f9fafc;
+  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 0.7rem;
   padding-bottom: 0rem;
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.125);
-}
-
-.skills-section h1 > span{
-  margin-top: -55px;  /* Size of fixed header */
-  padding-bottom:55px; 
-  display: block; 
 }
 
 .skills-section .skill-card-link {
@@ -24,7 +19,6 @@
 .skills-section .card {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  height: 100%;
 }
 
 .skills-section .card .card-body {
@@ -63,7 +57,7 @@
     padding-right: 0;
   }
   .skills-section .container {
-    max-width: 95%;
+    max-width: 100%;
   }
 }
 

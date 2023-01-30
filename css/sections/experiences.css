@@ -6,12 +6,6 @@
   margin-top: 1.5rem !important;
 }
 
-.experiences-section h1 > span{
-  margin-top: -55px;  /* Size of fixed header */
-  padding-bottom:55px; 
-  display: block; 
-}
-
 .experiences-section ul {
   padding-left: 1rem;
 }
@@ -47,7 +41,7 @@
   left: 50%;
 }
 
-.timeline .vertical-line:nth-child(even)::after {
+.vertical-line-left-adjustment::after {
   left: calc(50% - 3px) !important;
 }
 
@@ -75,24 +69,24 @@
   border-radius: 15px;
 }
 
-.timeline .row:nth-child(2n) div:nth-child(1) .corner {
+.top-left {
+  left: -50%;
+  top: -50%;
+}
+
+.top-right {
   left: 50%;
   top: -50%;
 }
 
-.timeline .row:nth-child(2n) div:nth-child(3) .corner {
+.bottom-left {
   left: -50%;
   top: calc(50% - 3px);
 }
 
-.timeline .row:nth-child(4n) div:nth-child(1) .corner {
+.bottom-right {
   left: 50%;
   top: calc(50% - 3px);
-}
-
-.timeline .row:nth-child(4n) div:nth-child(3) .corner {
-  left: -50%;
-  top: -50%;
 }
 
 /* ============= Device specific fixes ======= */
