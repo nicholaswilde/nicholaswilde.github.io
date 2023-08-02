@@ -17,6 +17,12 @@ buttons:
     filter: "code"
 
 projects:
+  - name: sourdough-calculator
+    role: Owner
+    repo: https://nicholaswilde.io/sourdough-calculator
+    timeline: "July 2023 - Present"
+    summary: "A React app to calculate the weights of sourdough ingredients using The Bread Code Sourdough recipe"
+    tags: ["hobby", "code"]
   - name: libbash
     role: Owner
     repo: https://nicholaswilde.io/libbash
