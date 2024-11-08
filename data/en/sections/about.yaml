@@ -7,7 +7,7 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Director, Automation Design
+designation: Senior Director, Automation Design
 company:
   name: Applied Medical
   url: "https://appliedmedical.com/"
@@ -27,9 +27,9 @@ socialLinks:
     icon: "fab fa-github"
     url: "https://github.com/nicholaswilde"
 
-  - name: Twitter
-    icon: "fab fa-twitter"
-    url: "https://twitter.com/nicholascwilde"
+  - name: X
+    icon: "fab fa-x-twitter"
+    url: "https://x.com/nicholascwilde"
 
   - name: Email
     icon: "fas fa-envelope"
