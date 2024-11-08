@@ -6,8 +6,16 @@ tasks:
     desc: Install hugo
     cmds:
       - brew install hugo
+  update:
+    desc: Update docker image
+    cmds:
+      - docker pull hugomods/hugo
   serve:
-    desc: Start the hugo server
+    desc: Start the hugo server using a Docker image
+    cmds:
+      - docker run -it --rm -v "${PWD}":/src hugomods/hugo server -w --bind=0.0.0.0
+  serve-local:
+    desc: Start the hugo server using local installation
     cmds:
       - hugo server --theme toha --watch --bind=0.0.0.0
   default:
