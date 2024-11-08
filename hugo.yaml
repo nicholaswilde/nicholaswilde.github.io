@@ -6,10 +6,6 @@ theme: "toha"
 enableRobotsTXT: true
 enableEmoji: true
 
-# services:
-#   googleAnalytics:
-#     id: "G-Z2DZJYE1MB"
-
 # Enable Analytics
 features:
   analytics:
@@ -17,15 +13,15 @@ features:
     services:
       google:
         id: G-Z2DZJYE1MB
-# 
+
 staticDir:
   - static
-# 
+
 markup:
   goldmark:
     renderer:
       unsafe: true
-# 
+
 # Use Hugo modules to add theme
 module:
   imports:
@@ -33,7 +29,6 @@ module:
 
 params:
   gitRepo: https://github.com/nicholaswilde/nicholaswilde.github.io
-  gitBranch: main
   background: images/background.jpg
   logo:
     favicon: images/favicon.jpg
