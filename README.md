@@ -16,7 +16,7 @@ Update files in the `data/en` folder to modify the site.
 
 This project is a Hugo site using the Toha theme. Here are the instructions for building and serving it:
 
-### :laoptop: Local Development Server
+### :laptop: Local Development Server
 
 You can run a local development server using the following methods:
 
