@@ -13,11 +13,15 @@ tasks:
   serve:
     desc: Start the hugo server using a Docker image
     cmds:
-      - docker run -it --rm -v "${PWD}":/src hugomods/hugo server -w --bind=0.0.0.0
+      - docker run -it --rm -v "${PWD}":/src hugomods/hugo server -w
   serve-local:
     desc: Start the hugo server using local installation
     cmds:
-      - hugo server --theme toha --watch --bind=0.0.0.0
+      - hugo server --watch
+  deps:
+    desc: Install theme
+    cmds:
+      - hugo mod get -u github.com/hugo-toha/toha/v4
   default:
     cmds:
       - task -l

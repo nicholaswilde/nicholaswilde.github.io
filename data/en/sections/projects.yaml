@@ -17,6 +17,29 @@ buttons:
     filter: "code"
 
 projects:
+  - name: fantasy-football-ai
+    role: Owner
+    timeline: "Present"
+    summary: "Using AI to dominate your fantasy football league. It's like having a secret weapon, but for nerds."
+    tags: ["hobby", "code"]
+  - name: frame-fi
+    role: Owner
+    repo: https://nicholaswilde.io/frame-fi
+    timeline: "Present"
+    summary: "Wireless freedom for digital picture frames."
+    tags: ["hobby", "code"]
+  - name: homelab
+    role: Owner
+    repo: https://nicholaswilde.io/homelab
+    timeline: "Present"
+    summary: "My homelab setup."
+    tags: ["hobby", "code"]
+  - name: home-assistant
+    role: Owner
+    repo: https://nicholaswilde.io/home-assistant
+    timeline: "Present"
+    summary: "My Home Assistant configuration."
+    tags: ["hobby", "code"]
   - name: sourdough-calculator
     role: Owner
     repo: https://nicholaswilde.io/sourdough-calculator
@@ -50,29 +73,11 @@ projects:
     timeline: "January 2022 - Present"
     summary: "A solar battery charger to charge lithium ion (li-ion) 18650, 9V, and coin batteries and Ni-MH AA and AAA batteries."
     tags: ["hobby", "code"]
-  - name: frame-fi
-    role: Owner
-    repo: https://nicholaswilde.io/frame-fi
-    timeline: "Present"
-    summary: "Wireless freedom for digital picture frames."
-    tags: ["hobby", "code"]
-  - name: homelab
-    role: Owner
-    repo: https://nicholaswilde.io/homelab
-    timeline: "Present"
-    summary: "My homelab setup."
-    tags: ["hobby", "code"]
   - name: notes
     role: Owner
     repo: https://nicholaswilde.io/notes
     timeline: "Present"
     summary: "My notes on various topics."
-    tags: ["hobby", "code"]
-  - name: home-assistant
-    role: Owner
-    repo: https://nicholaswilde.io/home-assistant
-    timeline: "Present"
-    summary: "My Home Assistant configuration."
     tags: ["hobby", "code"]
   - name: "k8s@home Docs"
     logo: /images/k8s-at-home.png
