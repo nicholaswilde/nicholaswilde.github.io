@@ -56,7 +56,6 @@ jobs:
       # push the generated content into the `main` (former `master`) branch.
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: nicholaswilde.io
