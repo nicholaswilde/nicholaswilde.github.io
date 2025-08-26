@@ -50,27 +50,30 @@ projects:
     timeline: "January 2022 - Present"
     summary: "A solar battery charger to charge lithium ion (li-ion) 18650, 9V, and coin batteries and Ni-MH AA and AAA batteries."
     tags: ["hobby", "code"]
-  - name: Helm Charts
-    logo: /images/helm.png
+  - name: frame-fi
     role: Owner
-    repo: https://github.com/nicholaswilde/helm-charts
-    timeline: "March 2020 - 2021"
-    summary: "My collection of helm charts"
+    repo: https://nicholaswilde.io/frame-fi
+    timeline: "Present"
+    summary: "Wireless freedom for digital picture frames."
     tags: ["hobby", "code"]
-  - name: Workbench
-    logo: /images/plane.jpg
+  - name: homelab
     role: Owner
-    url: https://photos.app.goo.gl/6Tk9DJvwFAKSfW8t7
-    timeline: "2019"
-    summary: "An english style woodworking workbench"
-    tags: ["hobby", "woodworking"]
-  - name: Shaker End Table
-    logo: /images/plane.jpg
+    repo: https://nicholaswilde.io/homelab
+    timeline: "Present"
+    summary: "My homelab setup."
+    tags: ["hobby", "code"]
+  - name: notes
     role: Owner
-    url: https://photos.app.goo.gl/LJHS58xKZ7is7tcV8
-    timeline: "2020"
-    summary: "A cherry shaker end table"
-    tags: ["hobby", "woodworking"]
+    repo: https://nicholaswilde.io/notes
+    timeline: "Present"
+    summary: "My notes on various topics."
+    tags: ["hobby", "code"]
+  - name: home-assistant
+    role: Owner
+    repo: https://nicholaswilde.io/home-assistant
+    timeline: "Present"
+    summary: "My Home Assistant configuration."
+    tags: ["hobby", "code"]
   - name: "k8s@home Docs"
     logo: /images/k8s-at-home.png
     role: Contributor
@@ -84,6 +87,27 @@ projects:
     timeline: "2021"
     summary: "My Debian based dot files."
     tags: ["hobby", "code"]
+  - name: "Home Cluster"
+    role: Owner
+    logo: /images/k8s-at-home.png
+    repo: https://nicholaswilde.io/home-cluster
+    timeline: "2021"
+    summary: "About My home Kubernetes (k3s) cluster managed by GitOps (Flux2)"
+    tags: ["hobby", "code"]
+  - name: Helm Charts
+    logo: /images/helm.png
+    role: Owner
+    repo: https://github.com/nicholaswilde/helm-charts
+    timeline: "March 2020 - 2021"
+    summary: "My collection of helm charts"
+    tags: ["hobby", "code"]
+  - name: Shaker End Table
+    logo: /images/plane.jpg
+    role: Owner
+    url: https://photos.app.goo.gl/LJHS58xKZ7is7tcV8
+    timeline: "2020"
+    summary: "A cherry shaker end table"
+    tags: ["hobby", "woodworking"]
   - name: "Turing Pi Scripts"
     logo: /images/turingpi.jpg
     role: Owner
@@ -105,10 +129,10 @@ projects:
     timeline: "2020"
     summary: "Quarter inch oak her planter box."
     tags: ["hobby", "woodworking"]
-  - name: "Home Cluster"
+  - name: Workbench
+    logo: /images/plane.jpg
     role: Owner
-    logo: /images/k8s-at-home.png
-    repo: https://nicholaswilde.io/home-cluster
-    timeline: "2021"
-    summary: "About My home Kubernetes (k3s) cluster managed by GitOps (Flux2)"
-    tags: ["hobby", "code"]
+    url: https://photos.app.goo.gl/6Tk9DJvwFAKSfW8t7
+    timeline: "2019"
+    summary: "An english style woodworking workbench"
+    tags: ["hobby", "woodworking"]
