@@ -19,23 +19,28 @@ buttons:
 projects:
   - name: fantasy-football-ai
     role: Owner
+    logo: /images/football.png
+    repo: https://nicholaswilde.io/fantasy-football-ai
     timeline: "Present"
     summary: "Using AI to dominate your fantasy football league. It's like having a secret weapon, but for nerds."
     tags: ["hobby", "code"]
   - name: frame-fi
     role: Owner
+    logo: /images/wifi-refresh.png
     repo: https://nicholaswilde.io/frame-fi
     timeline: "Present"
     summary: "Wireless freedom for digital picture frames."
     tags: ["hobby", "code"]
   - name: homelab
     role: Owner
+    logo: /images/home.png
     repo: https://nicholaswilde.io/homelab
     timeline: "Present"
     summary: "My homelab setup."
     tags: ["hobby", "code"]
   - name: home-assistant
     role: Owner
+    logo: /images/home-assistant.png
     repo: https://nicholaswilde.io/home-assistant
     timeline: "Present"
     summary: "My Home Assistant configuration."
