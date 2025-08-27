@@ -1,7 +1,23 @@
 ---
 version: '3'
 
+var:
+  VER: 2.5
+  
 tasks:
+  glite:
+    desc: Run Gemini with the gemini-2.5-flash-lite model.
+    cmds:
+      - gemini -m gemini-{{ .VER }}-flash-lite
+  gflash:
+    desc: Run Gemini with the gemini-2.5-flash model.
+    cmds:
+      - gemini -m gemini-{{ .VER }}-flash
+  gpro:
+    desc: 'Run Gemini with the gemini-{{ .VER }}-pro model.'
+    cmds:
+      - gemini -m gemini-{{ .VER }}-pro
+
   install:
     desc: Install hugo
     cmds:
@@ -17,7 +33,7 @@ tasks:
   serve-local:
     desc: Start the hugo server using local installation
     cmds:
-      - hugo server --watch
+      - hugo server -w
   deps:
     desc: Install theme
     cmds:

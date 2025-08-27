@@ -1,3 +1,7 @@
-resources/*
+resources/
 **.lock
-node_modules/*
+node_modules/
+.vscode/
+.DS_Store
+.history/
+public/
