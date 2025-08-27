@@ -21,7 +21,7 @@ The following sequence of commands is used to build the site for deployment, as 
     ```
 2.  Prepare `package.json` for npm dependencies from Hugo modules:
     ```bash
-    npm install
+    hugo mod npm pack
     ```
 3.  Install Node.js dependencies:
     ```bash
@@ -38,11 +38,11 @@ You can run a local development server using the following methods, as defined i
 
 *   **Using Docker:**
     ```bash
-    docker run -it --rm -v "${PWD}":/src hugomods/hugo server -w --bind=0.0.0.0
+    docker run -it --rm -v "${PWD}":/src hugomods/hugo server -w
     ```
 *   **Using a local Hugo installation:**
     ```bash
-    hugo server --theme toha --watch --bind=0.0.0.0
+    hugo server -w
     ```
 
 # Development Conventions
