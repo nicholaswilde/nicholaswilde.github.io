@@ -1,8 +1,9 @@
 ---
 repos:
-  - repo: https://github.com/adrienverge/yamllint
-    rev: v1.26.0
+  - repo: local
     hooks:
-      - id: yamllint
-        name: Run yamllint
-        description: Lint yaml files
+      - id: yamllint-rs
+        name: Run yamllint-rs
+        entry: yamllint-rs
+        language: system
+        types: [yaml]

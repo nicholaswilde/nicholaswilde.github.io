@@ -62,9 +62,9 @@ Use `task` to run common operations defined in `Taskfile.yml`.
 
 - `task build`: Build the documentation site using Zensical.
 - `task serve`: Start the documentation development server (default port 8000).
-- `task lint`: Run all linters (Yamllint, Markdownlint, Linkcheck).
+- `task lint`: Run all linters (yamllint-rs, Markdownlint, Linkcheck).
 - `task markdownlint`: Run only Markdownlint.
-- `task yamllint`: Run only Yamllint.
+- `task yamllint`: Run only yamllint-rs.
 - `task linkcheck`: Check for broken links in documentation.
 - `task generate-docs-nav`: Regenerate the MkDocs navigation.
 - `markitdown`: Use this CLI command to convert any file to Markdown.

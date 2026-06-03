@@ -27,7 +27,7 @@ This document outlines the technologies, tools, and build setup used for this pr
 
 ## Development Quality Assurance
 - **Pre-commit Hooks**: Defined in `.pre-commit-config.yaml` to enforce code and format formatting before commits.
-- **Linter**: ESLint for Javascript, Yamllint for YAML files.
+- **Linter**: ESLint for Javascript, yamllint-rs for YAML files.
 
 ## Hosting & CI/CD
 - **GitHub Actions**: Deploys the static site to GitHub Pages automatically upon pushes to the source branch.

@@ -53,6 +53,7 @@ tasks:
     desc: Run linters and configuration validation scripts
     cmds:
       - python3 scripts/test_skills.py
+      - yamllint-rs data/en/sections/
   default:
     cmds:
       - task -l
