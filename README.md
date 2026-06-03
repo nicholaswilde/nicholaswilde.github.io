@@ -42,10 +42,20 @@ To build the site for deployment, follow these steps:
     ```bash
     hugo mod tidy
     ```
-3.  **Install npm dependencies:**
+3.  **Prepare and install npm dependencies:**
+    Prepare the `package.json` for npm dependencies from Hugo modules:
+    ```bash
+    hugo mod npm pack
+    ```
+    Then, install the dependencies:
     ```bash
     npm install
     ```
+    *Note: If you encounter a `JSBUILD: Could not resolve "cytoscape/dist/cytoscape.umd.js"` build error, install `cytoscape@3.30.2` explicitly:*
+    ```bash
+    npm install cytoscape@3.30.2 --save-dev
+    ```
+
 4.  **Build the Hugo site with minification:**
     ```bash
     hugo --minify
