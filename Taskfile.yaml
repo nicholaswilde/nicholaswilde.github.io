@@ -38,6 +38,13 @@ tasks:
     desc: Install theme
     cmds:
       - hugo mod get -u github.com/hugo-toha/toha/v4
+  bootstrap:
+    desc: Bootstrap development dependencies and resolve theme environment
+    cmds:
+      - hugo mod tidy
+      - hugo mod npm pack
+      - npm install
+      - npm install cytoscape@3.30.2 --save-dev
   default:
     cmds:
       - task -l

@@ -33,30 +33,22 @@ You can run a local development server using the following methods:
 
 To build the site for deployment, follow these steps:
 
-1.  **Install theme:**
+1.  **Bootstrap dependencies:**
+    You can automatically initialize Hugo modules, pack dependency descriptors, and install NPM dependencies (including the cytoscape workaround) by running:
+    ```bash
+    task bootstrap
+    ```
+
+    *(Alternatively, you can run the steps manually:)*
     ```bash
     hugo mod get -u github.com/hugo-toha/toha/v4
-    ```
-    
-2.  **Tidy Hugo modules:**
-    ```bash
     hugo mod tidy
-    ```
-3.  **Prepare and install npm dependencies:**
-    Prepare the `package.json` for npm dependencies from Hugo modules:
-    ```bash
     hugo mod npm pack
-    ```
-    Then, install the dependencies:
-    ```bash
     npm install
-    ```
-    *Note: If you encounter a `JSBUILD: Could not resolve "cytoscape/dist/cytoscape.umd.js"` build error, install `cytoscape@3.30.2` explicitly:*
-    ```bash
     npm install cytoscape@3.30.2 --save-dev
     ```
 
-4.  **Build the Hugo site with minification:**
+2.  **Build the Hugo site with minification:**
     ```bash
     hugo --minify
     ```
