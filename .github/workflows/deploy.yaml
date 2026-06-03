@@ -28,19 +28,6 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Update Hugo Modules
-        run: hugo mod tidy
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        # with:
-          # node-version: 18
-
-      - name: Install node modules
-        run: |
-          hugo mod npm pack
-          npm install
-
       - name: "Setup cache"
         uses: actions/cache@v4
         with:
@@ -48,6 +35,19 @@ jobs:
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
+
+      - name: Update Hugo Modules
+        run: hugo mod tidy
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+
+      - name: Install node modules
+        run: |
+          hugo mod npm pack
+          npm install
 
       # build website
       - name: Build
