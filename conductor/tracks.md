@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Implement skills section to showcase technical capabilities**
+- [~] **Track: Implement skills section to showcase technical capabilities**
   *Link: [./tracks/skills_section_20260603/](./tracks/skills_section_20260603/)*
