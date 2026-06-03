@@ -14,6 +14,9 @@ skills:
       - name: Go
         percentage: 90
         icon: "fab fa-golang"
+      - name: Rust
+        percentage: 90
+        icon: "fab fa-rust"
       - name: Bash
         percentage: 85
         icon: "fas fa-terminal"
@@ -22,11 +25,20 @@ skills:
       - name: Git
         percentage: 90
         icon: "fab fa-git-alt"
+      - name: Docker
+        percentage: 90
+        icon: "fab fa-docker"
       - name: Kubernetes
         percentage: 80
         icon: "fas fa-dharmachakra"
+      - name: Ansible
+        percentage: 85
+        icon: "fab fa-ansible"
   - name: Frameworks & Tools
     items:
+      - name: MCP (Model Context Protocol)
+        percentage: 95
+        icon: "fas fa-robot"
       - name: Hugo
         percentage: 85
         icon: "fas fa-feather-alt"
