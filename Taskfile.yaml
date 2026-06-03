@@ -45,6 +45,14 @@ tasks:
       - hugo mod npm pack
       - npm install
       - npm install cytoscape@3.30.2 --save-dev
+  hooks:
+    desc: Install pre-commit git hooks
+    cmds:
+      - pre-commit install
+  lint:
+    desc: Run linters and configuration validation scripts
+    cmds:
+      - python3 scripts/test_skills.py
   default:
     cmds:
       - task -l

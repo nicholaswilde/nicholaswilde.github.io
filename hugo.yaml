@@ -1,6 +1,6 @@
 ---
 baseURL: https://nicholaswilde.io/
-languageCode: en-us
+locale: en-us
 title: nιcнolaѕ wιlde
 # theme: "toha"
 enableRobotsTXT: true
