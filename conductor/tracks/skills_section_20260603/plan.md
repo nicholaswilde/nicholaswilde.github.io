@@ -2,12 +2,12 @@
 
 This plan outlines the steps to add the skills section to the portfolio website, utilizing a Test-Driven Development (TDD) validation pattern to ensure YAML configuration correctness.
 
-## Phase 1: Setup and Validation Testing
+## Phase 1: Setup and Validation Testing [checkpoint: 3a29c8a]
 
-- [ ] Task: Write failing validation tests for the skills section configuration
-    - [ ] Create a Python validation test `scripts/test_skills.py` that verifies the existence and schema of `data/en/sections/skills.yaml`
-    - [ ] Run the validation test and confirm it fails (Red Phase)
-- [ ] Task: Conductor - User Manual Verification 'Phase 1 - Validation Setup' (Protocol in workflow.md)
+- [x] Task: Write failing validation tests for the skills section configuration (3a29c8a)
+    - [x] Create a Python validation test `scripts/test_skills.py` that verifies the existence and schema of `data/en/sections/skills.yaml`
+    - [x] Run the validation test and confirm it fails (Red Phase)
+- [x] Task: Conductor - User Manual Verification 'Phase 1 - Validation Setup' (Protocol in workflow.md) (3a29c8a)
 
 ## Phase 2: Implementation
 
