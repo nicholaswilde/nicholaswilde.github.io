@@ -1,0 +1,32 @@
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+skills:
+  - name: Programming Languages
+    items:
+      - name: Python
+        percentage: 95
+        icon: "fab fa-python"
+      - name: Go
+        percentage: 90
+        icon: "fab fa-golang"
+      - name: Bash
+        percentage: 85
+        icon: "fas fa-terminal"
+  - name: DevOps & CI/CD
+    items:
+      - name: Git
+        percentage: 90
+        icon: "fab fa-git-alt"
+      - name: Kubernetes
+        percentage: 80
+        icon: "fas fa-dharmachakra"
+  - name: Frameworks & Tools
+    items:
+      - name: Hugo
+        percentage: 85
+        icon: "fas fa-feather-alt"
