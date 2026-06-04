@@ -1,0 +1,44 @@
+<style>
+  html[data-theme='dark'] .card-img-xs {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 2px;
+    border-radius: 4px;
+  }
+</style>
+{{ $isRemote := or (hasPrefix .logo "http://") (hasPrefix .logo "https://") }}
+<div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all,{{ with .categories }}{{ delimit . ","}}{{ end }}'
+>
+  <a class="text-decoration-none" {{ if .url }}href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"{{ end }}>
+    <div class="card">
+      <div class="card-head d-flex">
+        {{ if .logo }}
+          {{ if $isRemote }}
+            <img class="card-img-xs" src="{{ .logo }}" alt="{{ .name }}" style="color-scheme: only light dark;" />
+          {{ else }}
+            {{ $logoPath := strings.TrimPrefix "/" .logo }}
+            {{ $logoImage := resources.Get $logoPath }}
+            {{ if $logoImage }}
+              {{ if ne $logoImage.MediaType.SubType "svg" }}
+                {{ $logoImage = $logoImage.Fit "24x24" }}
+              {{ end }}
+              <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" style="color-scheme: only light dark;" />
+            {{ else }}
+              {{/* Fallback to rendering the logo directly if it's in static/ or not a resource */}}
+              <img class="card-img-xs" src="{{ .logo | relURL }}" alt="{{ .name }}" style="color-scheme: only light dark;" />
+            {{ end }}
+          {{ end }}
+          <h5 class="card-title">{{ .name }}</h5>
+        {{ else if .icon }}
+          {{ $iconName := .icon }}
+          <h5 class="card-title"><i class="{{ $iconName }}"></i> {{ .name }}</h5>
+        {{ else }}
+          <h5 class="card-title">{{ .name }}</h5>
+        {{ end }}
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ .summary | markdownify }}</p>
+      </div>
+    </div>
+  </a>
+</div>

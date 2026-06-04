@@ -17,12 +17,21 @@ buttons:
     filter: "code"
 
 projects:
-  - name: fantasy-football-ai
+  - name: sysmqttd
     role: Owner
-    logo: /images/football.png
-    repo: https://nicholaswilde.io/fantasy-football-ai
+    logo: /images/sysmqttd.png
+    repo: https://github.com/nicholaswilde/sysmqttd
     timeline: "Present"
-    summary: "Using AI to dominate your fantasy football league. It's like having a secret weapon, but for nerds."
+    summary: >-
+        An ultra-lightweight system monitoring & GPIO actuation daemon in Rust for
+        low-resource SBCs with zero-config Home Assistant MQTT autodiscovery.
+    tags: ["hobby", "code"]
+  - name: side-eye
+    role: Owner
+    logo: /images/side-eye.png
+    repo: https://github.com/nicholaswilde/side-eye
+    timeline: "Present"
+    summary: "A tiny USB monitor that gives your Linux rig the SideEye. 🖥️"
     tags: ["hobby", "code"]
   - name: frame-fi
     role: Owner
@@ -45,14 +54,9 @@ projects:
     timeline: "Present"
     summary: "My Home Assistant configuration."
     tags: ["hobby", "code"]
-  - name: sourdough-calculator
-    role: Owner
-    repo: https://nicholaswilde.io/sourdough-calculator
-    timeline: "July 2023 - Present"
-    summary: "A React app to calculate the weights of sourdough ingredients using The Bread Code Sourdough recipe"
-    tags: ["hobby", "code"]
   - name: libbash
     role: Owner
+    logo: /images/libbash.png
     repo: https://nicholaswilde.io/libbash
     timeline: "September 2022 - Present"
     summary: "A collection of common bash libraries"
@@ -80,6 +84,7 @@ projects:
     tags: ["hobby", "code"]
   - name: notes
     role: Owner
+    logo: /images/notes.png
     repo: https://nicholaswilde.io/notes
     timeline: "Present"
     summary: "My notes on various topics."
@@ -91,11 +96,11 @@ projects:
     timeline: "2021"
     summary: "Docs for k8s@home"
     tags: ["hobby", "code"]
-  - name: "dotfiles2"
+  - name: "dotfiles"
     role: Owner
-    repo: https://nicholaswilde.io/dotfiles2
-    timeline: "2021"
-    summary: "My Debian based dot files."
+    repo: https://github.com/nicholaswilde/dotfiles
+    timeline: "Present"
+    summary: "My personal configuration files (dotfiles) managed with GNU Stow."
     tags: ["hobby", "code"]
   - name: "Home Cluster"
     role: Owner

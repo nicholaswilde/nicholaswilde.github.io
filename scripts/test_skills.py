@@ -24,23 +24,24 @@ def log(status: str, message: str) -> None:
 
 
 def parse_simple_yaml(content: str) -> Dict[str, Any]:
-    """Parses a simple skills YAML file structure.
+    """Parses a simple flat skills YAML file structure with categories.
 
     Args:
         content: The YAML file contents.
 
     Returns:
-        A nested dictionary representing the parsed YAML structure.
+        A dictionary representing the parsed YAML structure.
     """
     data: Dict[str, Any] = {}
     lines = content.split("\n")
 
-    current_key = None
+    current_section = None
     section_data: Dict[str, Any] = {}
+    buttons_data: List[Dict[str, Any]] = []
     skills_data: List[Dict[str, Any]] = []
 
-    current_category: Dict[str, Any] = {}
-    current_item: Dict[str, Any] = {}
+    current_button: Dict[str, Any] = {}
+    current_skill: Dict[str, Any] = {}
 
     for line in lines:
         stripped = line.strip()
@@ -49,39 +50,16 @@ def parse_simple_yaml(content: str) -> Dict[str, Any]:
 
         indent = len(line) - len(line.lstrip(" "))
 
-        # Match list items like "- name: Programming Languages" or "- name: Python"
-        if stripped.startswith("- "):
-            list_stripped = stripped[2:].strip()
-            list_match = re.match(r"^([^:]+):\s*(.*)$", list_stripped)
-            if list_match:
-                k = list_match.group(1).strip()
-                v = list_match.group(2).strip().strip('"').strip("'")
-                if indent == 2:
-                    current_category = {"name": v, "items": []}
-                    skills_data.append(current_category)
-                elif indent == 6:
-                    current_item = {"name": v}
-                    if "items" in current_category:
-                        current_category["items"].append(current_item)
-            continue
-
-        # Match key-value pairs like "section:" or "weight: 2"
-        match = re.match(r"^([^:]+):\s*(.*)$", stripped)
-        if not match:
-            continue
-
-        k = match.group(1).strip()
-        v = match.group(2).strip().strip('"').strip("'")
-
         if indent == 0:
-            current_key = k
-            if k == "section":
-                data["section"] = section_data
-            elif k == "skills":
-                data["skills"] = skills_data
-        elif indent == 2:
-            if current_key == "section":
-                # Convert types
+            if stripped.endswith(":"):
+                current_section = stripped[:-1].strip()
+            continue
+
+        if current_section == "section":
+            parts = stripped.split(":", 1)
+            if len(parts) == 2:
+                k = parts[0].strip()
+                v = parts[1].strip().strip('"').strip("'")
                 if v.lower() == "true":
                     val: Any = True
                 elif v.lower() == "false":
@@ -92,20 +70,42 @@ def parse_simple_yaml(content: str) -> Dict[str, Any]:
                     except ValueError:
                         val = v
                 section_data[k] = val
-        elif indent == 8:
-            if current_item is not None:
-                # Convert types
-                if v.lower() == "true":
-                    val = True
-                elif v.lower() == "false":
-                    val = False
-                else:
-                    try:
-                        val = int(v)
-                    except ValueError:
-                        val = v
-                current_item[k] = val
 
+        elif current_section == "buttons":
+            if stripped.startswith("- "):
+                current_button = {}
+                buttons_data.append(current_button)
+                stripped = stripped[2:].strip()
+            parts = stripped.split(":", 1)
+            if len(parts) == 2:
+                k = parts[0].strip()
+                v = parts[1].strip().strip('"').strip("'")
+                current_button[k] = v
+
+        elif current_section == "skills":
+            if stripped.startswith("- ") and indent == 2:
+                current_skill = {"categories": []}
+                skills_data.append(current_skill)
+                stripped = stripped[2:].strip()
+            
+            parts = stripped.split(":", 1)
+            if len(parts) == 2:
+                k = parts[0].strip()
+                v = parts[1].strip().strip('"').strip("'")
+                if k != "categories":
+                    current_skill[k] = v
+                else:
+                    match = re.match(r'^\[(.*)\]$', v)
+                    if match:
+                        items = [x.strip().strip('"').strip("'") for x in match.group(1).split(",")]
+                        current_skill["categories"].extend([x for x in items if x])
+            elif stripped.startswith("-") and indent == 6:
+                cat_val = stripped[1:].strip().strip('"').strip("'")
+                current_skill["categories"].append(cat_val)
+
+    data["section"] = section_data
+    data["buttons"] = buttons_data
+    data["skills"] = skills_data
     return data
 
 
@@ -163,47 +163,26 @@ def test_skills_config() -> bool:
 
     for idx, skill in enumerate(skills):
         if "name" not in skill:
-            log("ERRO", f"Skill category at index {idx} is missing required field 'name'")
+            log("ERRO", f"Skill at index {idx} is missing required field 'name'")
             return False
-
-        category_name: str = skill["name"]
-        categories.add(category_name)
-        
-        items = skill.get("items", [])
-        if not isinstance(items, list):
-            log(
-                "ERRO",
-                f"Category '{category_name}' has 'items' which is not a list",
-            )
-            return False
-            
-        for item_idx, item in enumerate(items):
-            if "name" not in item:
-                log(
-                    "ERRO",
-                    f"Item at index {item_idx} in category '{category_name}' "
-                    f"must contain 'name'",
-                )
-                return False
-            skill_names.append(item["name"])
+        skill_names.append(skill["name"])
+        for cat in skill.get("categories", []):
+            categories.add(cat)
 
     # Verify required categories are present
     expected_categories: Set[str] = {
-        "Programming Languages",
-        "DevOps & CI/CD",
-        "Frameworks & Tools",
+        "languages",
+        "devops",
+        "tools",
     }
     missing_categories: Set[str] = expected_categories - categories
     if missing_categories:
-        log("ERRO", f"Missing required categories: {missing_categories}")
+        log("ERRO", f"Missing required categories in skills: {missing_categories}")
         return False
 
     # Verify required skills are present
     expected_skills: Set[str] = {
-        "Python",
-        "Go",
         "Bash",
-        "Hugo",
         "Git",
         "Kubernetes",
     }
@@ -226,3 +205,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

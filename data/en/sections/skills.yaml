@@ -5,41 +5,105 @@ section:
   enable: true
   weight: 2
   showOnNavbar: true
+  filter: true
+
+buttons:
+  - name: All
+    filter: "all"
+  - name: Programming Languages
+    filter: "languages"
+  - name: DevOps & CI/CD
+    filter: "devops"
+  - name: Frameworks & Tools
+    filter: "tools"
+  - name: Woodworking
+    filter: "woodworking"
+  - name: Cooking & Baking
+    filter: "culinary"
 
 skills:
-  - name: Programming Languages
-    items:
-      - name: Python
-        percentage: 95
-        icon: "fab fa-python"
-      - name: Go
-        percentage: 90
-        icon: "fab fa-golang"
-      - name: Rust
-        percentage: 90
-        icon: "fab fa-rust"
-      - name: Bash
-        percentage: 85
-        icon: "fas fa-terminal"
-  - name: DevOps & CI/CD
-    items:
-      - name: Git
-        percentage: 90
-        icon: "fab fa-git-alt"
-      - name: Docker
-        percentage: 90
-        icon: "fab fa-docker"
-      - name: Kubernetes
-        percentage: 80
-        icon: "fas fa-dharmachakra"
-      - name: Ansible
-        percentage: 85
-        icon: "fab fa-ansible"
-  - name: Frameworks & Tools
-    items:
-      - name: MCP (Model Context Protocol)
-        percentage: 95
-        icon: "fas fa-robot"
-      - name: Hugo
-        percentage: 85
-        icon: "fas fa-feather-alt"
+  - name: Bash
+    icon: "fas fa-terminal"
+    categories: ["languages"]
+    url: "https://www.gnu.org/software/bash/"
+    summary: "Proficient in writing automated scripts for system configuration, backups, and developer workflows."
+  - name: VBA
+    icon: "fas fa-code"
+    categories: ["languages"]
+    url: "https://learn.microsoft.com/en-us/office/vba/api/overview/"
+    summary: "Experienced in writing VBA macros for Excel automation and SOLIDWORKS API CAD model scripting."
+  - name: Git
+    icon: "fab fa-git-alt"
+    categories: ["devops"]
+    url: "https://git-scm.com/"
+    summary: "Experienced with Git-based collaborative workflows, branching strategies, rebasing, and GitHub actions."
+  - name: Docker
+    icon: "fab fa-docker"
+    categories: ["devops"]
+    url: "https://www.docker.com/"
+    summary: "Proficient in containerizing applications, building multi-stage images, and optimization."
+  - name: Kubernetes
+    icon: "fas fa-dharmachakra"
+    categories: ["devops"]
+    url: "https://kubernetes.io/"
+    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
+  - name: Ansible
+    logo: "https://cdn.jsdelivr.net/gh/gilbarbara/logos@master/logos/ansible.svg"
+    categories: ["devops"]
+    url: "https://www.ansible.com/"
+    summary: "Experienced in writing playbooks and roles for infrastructure provisioning and configuration management."
+  - name: MCP (Model Context Protocol)
+    icon: "fas fa-robot"
+    categories: ["tools"]
+    url: "https://modelcontextprotocol.io/"
+    summary: "Experienced in designing and implementing Model Context Protocol servers to extend AI coding tools."
+  - name: Home Assistant
+    icon: "fas fa-home"
+    categories: ["tools"]
+    url: "https://www.home-assistant.io/"
+    summary: "Experienced in building advanced home automation dashboards, custom integrations, and YAML configurations."
+  - name: ESP32
+    icon: "fas fa-microchip"
+    categories: ["tools"]
+    url: "https://www.espressif.com/en/products/socs/esp32"
+    summary: "Experienced in programming and configuring ESP32 microcontrollers for custom IoT devices and sensors."
+  - name: ESPHome
+    icon: "fas fa-plug"
+    categories: ["tools"]
+    url: "https://esphome.io/"
+    summary: "Proficient in writing yaml configurations to create custom smart home devices and flash ESP8266/ESP32 firmware."
+  - name: SOLIDWORKS
+    icon: "fas fa-drafting-compass"
+    categories: ["tools"]
+    url: "https://www.solidworks.com/"
+    summary: "Proficient in 3D CAD modeling, assembly design, drafting, and parametric part creation using SOLIDWORKS."
+  - name: SOLIDWORKS PDM
+    icon: "fas fa-database"
+    categories: ["tools"]
+    url: "https://www.solidworks.com/product/solidworks-pdm"
+    summary: "Experienced in engineering data management, workflow administration, file vaulting, and version control using SOLIDWORKS PDM."
+  - name: Debian
+    icon: "fab fa-debian"
+    categories: ["devops"]
+    url: "https://www.debian.org/"
+    summary: "Experienced in configuring, securing, and maintaining Debian-based Linux servers and desktop environments."
+  - name: Traditional Woodworking
+    icon: "fas fa-hammer"
+    categories: ["woodworking"]
+    url: "https://en.wikipedia.org/wiki/Woodworking"
+    summary: "Proficient in traditional woodworking techniques using hand planes, chisels, back saws, and joinery layout methods."
+  - name: Homelabbing
+    icon: "fas fa-server"
+    categories: ["tools"]
+    url: "https://en.wikipedia.org/wiki/Home_server"
+    summary: "Experienced in setting up, administering, and automating home lab infrastructure, self-hosted services, and networks."
+  - name: Cooking
+    icon: "fas fa-utensils"
+    categories: ["culinary"]
+    url: "https://en.wikipedia.org/wiki/Cooking"
+    summary: "Experienced in preparing various cuisines, knife skills, flavor pairing, and daily meal preparation."
+  - name: Baking
+    icon: "fas fa-bread-slice"
+    categories: ["culinary"]
+    url: "https://en.wikipedia.org/wiki/Baking"
+    summary: "Proficient in baking breads, pastries, and desserts, including sourdough techniques and recipe scaling."

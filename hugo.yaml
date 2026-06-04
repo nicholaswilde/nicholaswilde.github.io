@@ -5,6 +5,8 @@ title: nιcнolaѕ wιlde
 # theme: "toha"
 enableRobotsTXT: true
 enableEmoji: true
+bind: "0.0.0.0"
+port: 1313
 
 # Enable Analytics
 features:
