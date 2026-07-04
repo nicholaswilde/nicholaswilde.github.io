@@ -92,7 +92,7 @@ projects:
   - name: Cheatsheets
     role: Owner
     logo: fas fa-book-open
-    repo: https://github.com/nicholaswilde/cheatsheets
+    repo: https://nicholaswilde.io/cheatsheets/
     url: https://nicholaswilde.io/cheatsheets/
     timeline: "Present"
     summary: "A collection of personal cheatsheets."
