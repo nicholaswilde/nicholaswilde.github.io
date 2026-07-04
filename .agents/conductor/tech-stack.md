@@ -9,6 +9,7 @@ This document outlines the technologies, tools, and build setup used for this pr
 ## Dependency Management
 - **Hugo Modules**: Used to fetch and manage the Toha theme.
 - **npm / Node.js**: Used to manage and install front-end dependencies and build tooling (defined in `package.json`).
+- **uv**: A fast Python package installer and resolver, used to run Python automation and validation scripts.
 
 ## Frontend Frameworks & Libraries
 - **Styling**: Bootstrap 5 (integrated via SCSS styling).

@@ -52,8 +52,16 @@ tasks:
   lint:
     desc: Run linters and configuration validation scripts
     cmds:
-      - python3 scripts/test_skills.py
+      - uv run scripts/test_skills.py
       - yamllint-rs data/en/sections/
+  add-project:
+    desc: Add a new project to projects.yaml
+    cmds:
+      - uv run scripts/add_project.py {{.CLI_ARGS}}
+  uv-sync:
+    desc: Run uv sync to synchronize python dependencies
+    cmds:
+      - uv sync
   default:
     cmds:
       - task -l

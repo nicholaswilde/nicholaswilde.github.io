@@ -56,7 +56,7 @@ After modifying `data/en/sections/skills.yaml`, you must run validation and buil
 
 1. **Run Validation Script:** Run the python validation test to ensure the schema is correct:
    ```bash
-   python3 scripts/test_skills.py
+   uv run scripts/test_skills.py
    ```
 2. **Task lint:** Run the lint task to verify yamllint and validation checks pass:
    ```bash

@@ -1,0 +1,7 @@
+[project]
+name = "nicholaswilde-portfolio"
+version = "0.1.0"
+description = "Nicholas Wilde portfolio website build scripts"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []

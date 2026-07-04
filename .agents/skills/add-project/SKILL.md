@@ -35,11 +35,35 @@ Each project entry under the `projects:` list should adhere to the following sch
 
 ---
 
-## 3.0 VERIFICATION STEPS
+---
+
+## 3.0 AUTOMATED ADDITION VIA TASK / SCRIPT
+You can use the automated Python script or Taskfile task to append a new project to `data/en/sections/projects.yaml`.
+
+### 3.1 Using the Task (Recommended)
+Run the following command from the root of the repository:
+```bash
+task add-project -- --name="Project Name" --summary="Brief description of the project." --tags="hobby,code"
+```
+
+### 3.2 Supported Arguments
+The script/task supports the following command-line arguments:
+* `--name`: (Required) Display name of the project.
+* `--summary`: (Required) 1-2 sentence description.
+* `--role`: (Optional) Role in the project (default: "Owner").
+* `--logo`: (Optional) Path to project image (e.g., `/images/custom-logo.png`) or a FontAwesome icon class (e.g., `fas fa-book-open`).
+* `--repo`: (Optional) Link to the project's repository.
+* `--url`: (Optional) Link to live demo or project home page.
+* `--timeline`: (Optional) Timeline range (default: "Present").
+* `--tags`: (Optional) Comma-separated list of category tags (e.g., `hobby,code`).
+
+---
+
+## 4.0 VERIFICATION STEPS
 After modifying `data/en/sections/projects.yaml`, you must run validation and check quality gates:
 
 1. **Syntax Check:** Ensure the YAML file compiles correctly.
-2. **Build Test:** If local tools are available, build the Hugo site:
+2. **Build Test:** Build the Hugo site to verify it compiles:
    ```bash
    hugo --minify
    ```
