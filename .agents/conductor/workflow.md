@@ -383,7 +383,7 @@ A task is complete when:
 
 ### Critical Bug in Production
 
-1. Create hotfix branch from main.
+1. Create hotfix branch from source.
 2. Write failing test for bug.
 3. Implement minimal fix.
 4. Test thoroughly including mobile.
@@ -420,7 +420,7 @@ A task is complete when:
 
 ### Deployment Steps
 
-1. Merge feature branch to main.
+1. Merge feature branch to source.
 2. Tag release with version.
 3. Push to deployment service.
 4. Run database migrations.

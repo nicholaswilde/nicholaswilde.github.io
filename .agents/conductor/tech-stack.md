@@ -31,4 +31,7 @@ This document outlines the technologies, tools, and build setup used for this pr
 - **Linter**: ESLint for Javascript, yamllint-rs for YAML files.
 
 ## Hosting & CI/CD
-- **GitHub Actions**: Deploys the static site to GitHub Pages automatically upon pushes to the source branch.
+- **GitHub Actions**: Builds and deploys the static site using a two-branch workflow:
+  - **Source branch (`source`)**: Stores all Hugo source code, content, and configuration. Pushes to `source` trigger the `Deploy to Github Pages` workflow which compiles the site and pushes built static assets to the `main` branch.
+  - **Publish branch (`main`)**: Stores the compiled static HTML/CSS files. GitHub Pages is configured in `legacy` mode to deploy from the root of the `main` branch.
+  - **Environment Protection**: The `github-pages` deployment environment requires branch policies to allow deployments from both `source` (for the source build trigger) and `main` (for the built-in pages deployer).
