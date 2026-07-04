@@ -31,6 +31,7 @@ module:
 
 params:
   gitRepo: https://github.com/nicholaswilde/nicholaswilde.github.io
+  gitBranch: source
   background: images/background.jpg
   logo:
     favicon: images/favicon.jpg
