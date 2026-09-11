@@ -15,6 +15,16 @@ buttons:
     filter: "woodworking"
   - name: Code
     filter: "code"
+  - name: ESP32
+    filter: "esp32"
+  - name: CYD
+    filter: "cyd"
+  - name: Weather Station
+    filter: "weather-station"
+  - name: Digital Clock
+    filter: "digital-clock"
+  - name: Web Flasher
+    filter: "web-flasher"
 
 projects:
   - name: sysmqttd
@@ -159,3 +169,30 @@ projects:
     timeline: "2019"
     summary: "An english style woodworking workbench"
     tags: ["hobby", "woodworking"]
+  - name: "esp32-sandbox"
+    role: "Owner"
+    repo: https://github.com/nicholaswilde/esp32-sandbox
+    timeline: "Present"
+    summary: "🧪 Sandbox repository for testing ESP32 features, hardware integrations, and Cheap Yellow Display (CYD) projects. ⚡"
+    tags: ["esp32", "iot", "arduino", "platformio"]
+  - name: "CYD Weather Station"
+    role: "Owner"
+    repo: https://github.com/nicholaswilde/cyd-weather-station
+    timeline: "Present"
+    summary: >-
+        A beautiful Catppuccin-themed weather station and desk clock for the
+        ESP32 Cheap Yellow Device (CYD) using LVGL v8 and Open-Meteo/OWM.
+    tags: ["esp32", "cyd", "weather-station"]
+  - name: "CYD Digital Clock"
+    role: "Owner"
+    repo: https://github.com/nicholaswilde/cyd-digital-clock
+    timeline: "Present"
+    summary: "A beautiful Catppuccin-themed digital clock and desk clock for the ESP32 Cheap Yellow Device (CYD) using LVGL v8."
+    tags: ["esp32", "cyd", "digital-clock"]
+  - name: "esp32-web-flasher"
+    role: "Owner"
+    repo: https://github.com/nicholaswilde/esp32-web-flasher
+    url: http://nicholaswilde.io/esp32-web-flasher/
+    timeline: "Present"
+    summary: "🌐 Flash your ESP32 device directly from the browser ⚡"
+    tags: ["esp32", "web-flasher"]
