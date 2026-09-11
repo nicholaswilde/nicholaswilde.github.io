@@ -1,7 +1,12 @@
 resources/
-**.lock
+.hugo_build.lock
 node_modules/
 .vscode/
 .DS_Store
 .history/
 public/
+
+# Local dependencies and caches
+.codegraph/
+.venv/
+.env
