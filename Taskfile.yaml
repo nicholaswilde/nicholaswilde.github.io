@@ -58,6 +58,10 @@ tasks:
     desc: Add a new project to projects.yaml
     cmds:
       - uv run scripts/add_project.py {{.CLI_ARGS}}
+  add-skill:
+    desc: Add a new skill to skills.yaml
+    cmds:
+      - uv run scripts/add_skill.py {{.CLI_ARGS}}
   uv-sync:
     desc: Run uv sync to synchronize python dependencies
     cmds:

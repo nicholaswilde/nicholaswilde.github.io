@@ -3,66 +3,62 @@ name: add-skill
 description: Guides the agent on how to add a new skill to the portfolio skills list
 ---
 ## 1.0 SYSTEM DIRECTIVE
-You are an AI coding assistant. Your task is to add or guide the agent in adding a skill to Nicholas Wilde's personal portfolio. You must follow the instructions below to ensure data integrity, layout consistency, and that validation tests pass.
+You are an AI coding assistant. Your task is to guide the user or proceed with adding a skill to Nicholas Wilde's personal portfolio. You must follow the instructions below to ensure data integrity and layout consistency.
 
 ---
 
 ## 2.0 DATA SCHEMA FOR SKILLS
 All skills are stored in `data/en/sections/skills.yaml`.
 
-### 2.1 Skills Section Structure
-The document has a `section` header, a list of filter buttons under `buttons`, and a flat list of items under `skills`:
+### 2.1 Skill Entry Structure
+Each skill entry under the `skills:` list should adhere to the following schema:
 
 ```yaml
-section:
-  name: Skills
-  id: skills
-  enable: true
-  weight: 2
-  showOnNavbar: true
-  filter: true
-
-buttons:
-  - name: "All"
-    filter: "all"
-  - name: "Category Display Name"
-    filter: "category-id"
-
-skills:
-  - name: "Skill Name"             # String: Display name of the skill (e.g. Python, Git)
-    icon: "fab fa-python"          # String: FontAwesome icon class (e.g., fab fa-golang, fas fa-robot)
-    categories: ["category-id"]    # Array of Strings: Category ID filters matching a button filter
-    url: "https://example.com/"    # String: Link to the official website of the skill
-    summary: "Skill summary."      # String: Brief description of proficiency and experience
+- name: "Skill Name"                  # String: Name of the skill (display name)
+  icon: "fas fa-terminal"             # String: (Optional) FontAwesome icon class
+  logo: "url-to-logo"                 # String: (Optional) URL to logo image (use either icon or logo)
+  url: "https://..."                  # String: (Optional) Link to official website or documentation
+  summary: "Brief experience summary" # String: 1-2 sentence description of proficiency/experience
+  categories: ["languages", "tools"]  # Array of Strings: Category tags for filtering
 ```
 
-### 2.2 Adding a Skill
-1. Locate `data/en/sections/skills.yaml`.
-2. Determine which category/categories the skill belongs to (e.g., `languages`, `devops`, `tools`).
-3. If a new category filter is required:
-   - Add it to the `buttons` list under the root of the file, specifying its `name` and `filter` (lowercase identifier).
-4. Append the new skill to the flat `skills` list using the following keys:
-   - `name`: The skill's display name.
-   - `icon`: The FontAwesome class (e.g., `fab fa-...` or `fas fa-...`).
-   - `categories`: An inline array containing the category string filter ID (e.g., `["languages"]`).
-   - `url`: The URL to the official website of the tool/language.
-   - `summary`: A concise, professional description of experience with the skill.
-   - **Do NOT add a `logo` field.** (Use `icon` instead of `logo` to maintain site consistency unless specifically instructed otherwise).
+### 2.2 Adding a Skill Category and Button
+1. Check the `categories` specified in the new skill.
+2. Verify if these categories are present under the `buttons:` list in `data/en/sections/skills.yaml`.
+3. If a category is not present, add a corresponding button configuration under `buttons:`:
+   ```yaml
+   - name: Category Name Display
+     filter: "category-filter"
+   ```
 
 ---
 
-## 3.0 VERIFICATION STEPS
-After modifying `data/en/sections/skills.yaml`, you must run validation and build checks:
+## 3.0 AUTOMATED ADDITION VIA TASK / SCRIPT
+You can use the automated Python script or Taskfile task to append a new skill to `data/en/sections/skills.yaml`.
 
-1. **Run Validation Script:** Run the python validation test to ensure the schema is correct:
+### 3.1 Using the Task (Recommended)
+Run the following command from the root of the repository:
+```bash
+task add-skill -- --name="Skill Name" --summary="Brief description of experience." --categories="languages,tools"
+```
+
+### 3.2 Supported Arguments
+The script/task supports the following command-line arguments:
+* `--name`: (Required) Display name of the skill.
+* `--summary`: (Required) Brief summary of your experience with the skill.
+* `--icon`: (Optional) FontAwesome icon class (e.g., `fas fa-robot`).
+* `--logo`: (Optional) URL to a logo image (use either `--icon` or `--logo`).
+* `--url`: (Optional) Link to the skill's official website.
+* `--categories`: (Optional) Comma-separated list of categories (e.g., `languages,tools`).
+
+---
+
+## 4.0 VERIFICATION STEPS
+After modifying `data/en/sections/skills.yaml`, you must run validation and check quality gates:
+
+1. **Syntax Check:** Ensure the YAML file compiles correctly.
+2. **Build Test:** Build the Hugo site to verify it compiles:
    ```bash
-   uv run scripts/test_skills.py
+   hugo --minify
    ```
-2. **Task lint:** Run the lint task to verify yamllint and validation checks pass:
-   ```bash
-   task lint
-   ```
-3. **Build Test:** Build the Hugo site to verify it compiles without template errors:
-   ```bash
-   hugo
-   ```
+3. **Verify Links:** Check that the newly added `url` links are valid and active.
