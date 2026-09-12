@@ -1,0 +1,9 @@
+/* override this file for custom css */
+
+@import 'bootstrap/scss/mixins';
+
+@include media-breakpoint-down(md) {
+  #homePageBackgroundImageDivStyled {
+    background-image: url('/images/background-mobile.jpg') !important;
+  }
+}
